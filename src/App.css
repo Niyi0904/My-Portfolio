@@ -65,6 +65,9 @@ p {
   color: var(--primary);
   background-color: var(--white);
 }
+.btn-view-all {
+  margin-left: 500px;
+}
 .btn-github {
   color: var(--white);
   background-color: var(--github);
@@ -278,7 +281,7 @@ h2 {
 .skills--section--img {
   display: flex;
   padding: 13.3px;
-  justify-content: center;
+ justify-content: center;
   align-items: center;
   gap: 13.3px;
   border-radius: 10.6px;
@@ -365,6 +368,10 @@ h2 {
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-top-left-radius: 12px;
+
+
+
+
   border-top-right-radius: 12px;
 }
 .portfolio--section--card--content {
@@ -746,3 +753,54 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens Ends*/
+
+/* My Project Starts */
+.project-section{
+  display: flex;
+  padding: 112px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.niyi{
+  height: 520px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+  border: 1px solid black;
+}
+.project-card-img {
+  width: 100%;
+}
+.projects-description {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.project-btn {
+  padding-top: 10px;
+}
+.btn-project {
+  color: var(--white);
+  background-color: var(--github);
+  border: var(--github);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
+  gap: 16px;
+}
+a {
+  text-decoration: none;
+}

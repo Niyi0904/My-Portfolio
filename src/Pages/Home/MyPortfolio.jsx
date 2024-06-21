@@ -1,4 +1,5 @@
 import data from "../../data/index.json";
+import { Link } from "react-router-dom";
 
 export default function MyPortfolio() {
   return (
@@ -66,6 +67,9 @@ export default function MyPortfolio() {
           </div>
         ))}
       </div>
+      <Link to="myprojects">
+        <button className="btn btn-primary btn-view-all">View all</button>
+      </Link>
     </section>
   );
 }
