@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+li{
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+/* @keyframes grow {
+    0% {
+        border-bottom: 2px solid blue;
+        border-bottom-width: 0;
+        border-spacing: 10px;
+    }
+    50%{
+        border-bottom: 2px solid blue;
+        border-bottom-width: 10px;
+        border-spacing: 10px;
+    }
+    to {
+        border-bottom: 2px solid blue;
+        border-bottom-width: 50px;
+    }
+}  */
+
+.nav-items li:hover {
+    /* animation-name: grow;
+    animation-duration: 10s;
+    animation-fill-mode: forwards; */
+    border-bottom: 2px solid blue;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.cards p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.btn:active{
+    transform: scale(0.7);
+    transition: transform .5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.herosection-description{
+    text-align: justify;
+}
+
+.project-card{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.17);
+
+    position: relative;
+    bottom: 50px;
+}
+@keyframes hovering {
+    0%{
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.17);
+    }
+    100%{
+        box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.17);
+    }
+}
+.project-card:hover{
+    animation-name: hovering;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.project-image{
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-item h1:hover{
+    border-radius: 10px;
+    background-color: rgb(2, 2, 70);
+    color: antiquewhite;
+}
