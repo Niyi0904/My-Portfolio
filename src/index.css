@@ -74,15 +74,24 @@ li{
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-.project-image{
-    width: 100%;
+/* .project-image{
+    position: relative;
+    width: 200px;
     height: 50%;
-    background-position: center;
-    background-size: cover;
-}
+} */
 
 .menu-item h1:hover{
     border-radius: 10px;
     background-color: rgb(2, 2, 70);
     color: antiquewhite;
+}
+.project-title, .project-stack{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.herosection-desc{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.herosection-img{
+    display: flex;
+    justify-content: flex-start;
 }

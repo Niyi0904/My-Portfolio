@@ -23,12 +23,13 @@ const Navbar = () =>  {
     }, [screenSize]);
 
   return (
-    <div className="fixed w-full">
-        <nav className="flex justify-between bg-gray-50 text-blue-950 space-x-4 h-12">
+    <div className="fixed w-full z-20 mb-11">
+        <nav className="flex justify-between bg-gray-50 text-blue-950 space-x-4 h-12 lg:h-14 xl:h-14">
             <div className="relative left-[5%] top-2 text-3xl xs:text-2xl font-extrabold font-sans ">Nidavtech</div>
             {
-                menubar ? <div className="relative right-[5%] top-3">
-                    <i className="fi fi-br-menu-burger menu-bar text-blue-950 text-2xl xs:text-xl font-light" onClick={openMenu}></i>
+                menubar ? <div className="flex relative right-[5%] top-3">
+                  <p className="relative right-3 text-sm">Menu</p>
+                    <i className="fi fi-br-menu-burger menu-bar text-blue-950 text-xl xs:text-lg font-light" onClick={openMenu}></i>
                 </div> 
                 : 
                 <ul className="relative bottom-1 flex justify-center space-x-10 pt-5 pr-20 font-serif font-bold nav-items pb-0">

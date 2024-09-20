@@ -4,18 +4,18 @@ import { UseStateContext } from '../../context/context';
 const Menu = () => {
     const {closeMenu} = UseStateContext();
     return (
-        <div className='absolute w-[100%] h-[40%] z-[5] bg-red-800 text-blue-950 text-lg'>
-            <div className='flex justify-center top-5 relative'>
+        <div className='fixed w-[100%] h-[50%] z-[5] bg-gray-100 text-blue-950 text-sm'>
+            <div className='flex justify-center top-[30%] relative'>
                 <div className='flex flex-col text-center relative space-y-4 menu-item w-[30%]'>
-                    <h1>Home</h1>  
-                    <h1>Home</h1>
-                    <h1>Home</h1>
-                    <h1>Home</h1>
-
-                    <div className="relative right-[10%] top-[16%]" onClick={closeMenu}>
-                    <i className="fi fi-br-menu-burger menu-bar text-blue-950 text-2xl font-light"></i>
-                </div> 
+                    <h1>HOME</h1>  
+                    <h1>SKILLS</h1>
+                    <h1>PROJECTS</h1>
+                    <h1>CERTIFICATION</h1>
+                    <h1>CONTACT</h1>
                 </div>
+                <div className="relative bottom-5 left-[27%]" onClick={closeMenu}>
+                    <i className="fi-br-closed-captioning-slash menu-bar text-blue-950 text-2xl font-light"></i>
+                </div> 
             </div>
         </div>
     )

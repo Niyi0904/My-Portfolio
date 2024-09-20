@@ -14,7 +14,7 @@ import { UseStateContext } from "./context/context";
 const App = () => {
   const {menu} = UseStateContext();
   return (
-    <div className="h-full">
+    <div>
       <Navbar/>
       {menu ? <Menu/> : ''}
       <HeroSection/>
