@@ -7,6 +7,7 @@ import Projects from "./components/projects/projects";
 import Menu from "./components/menu/menu";
 
 import { UseStateContext } from "./context/context";
+import Certifications from "./components/certifications/certifications";
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
       <HeroSection/>
       <Skills/>
       <Projects/>
+      <Certifications/>
     </div>
   );
 }
