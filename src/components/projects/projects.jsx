@@ -12,7 +12,7 @@ const Projects = () => (
                 <div className="bg-white project-card w-80 h-[400px] rounded-md xs:mt-8 sm:mt-8 mt-4">
                     <div className="relative mb-2 mt-2 left-5">
                         <h1 className="text-xl font-semibold project-title">{projects.projectTitle}</h1>
-                        <h1 className="relative top-1 font-extrabold project-stack text-[12px]">{projects.projectCategory}</h1>
+                        <h1 className="relative top-1 font-medium project-stack text-[12px]">{projects.projectCategory}</h1>
                     </div>
                     <div className="w-full flex h-[70%] justify-center items-center">
                         <img className="relative w-[90%] rounded-sm h-[90%] project-image" src={projects.projectImage}/>
