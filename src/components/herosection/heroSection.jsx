@@ -5,7 +5,7 @@ import { Myphoto } from "../../assests/images";
 
 const HeroSection = () =>  {
   return (
-<div className="bg-blue-50 herosection-desc rounded-b-lg relative top-10">
+<div id="home" className="bg-blue-50 herosection-desc rounded-b-lg relative top-10">
     <div className="grid xs:flex grid-cols-2 xs:flex-col-reverse h-full rounded-b-xl py-12 sm:px-10 px-28 xs:px-0 justify-center items-center gap-x-16">
         <div className="relative leading-8 xs:leading-7 xs:w-[90%] w-[80%] xs:top-[10%]">
             <p>Hi, My Name is</p>

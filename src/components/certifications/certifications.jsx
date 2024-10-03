@@ -3,7 +3,7 @@ import { projectData } from "../projects/projectData";
 
 const Certifications = () => {
     return (
-        <div className="relative top-24 text-blue-950 font-mono flex flex-col justify-center items-center mt-10 border-b-[2px] border-b-slate-200">
+        <div id='certificates' className="relative top-24 text-blue-950 font-mono flex flex-col justify-center items-center mt-10 border-b-[2px] border-b-slate-200">
         <h1 className="text-4xl font-extrabold flex justify-center mb-4">CERTIFICATIONS</h1>
         <div className="flex flex-wrap px-4 gap-x-12 pt-10 justify-center items-center w-full text-blue-950">
             {projectData.map(projects  => (       

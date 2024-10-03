@@ -2,7 +2,7 @@ import React from "react";
 import { skillsData, languageData } from "./skillsData";
 const Skills = () =>  {
   return (
-    <div className="relative top-20 text-blue-950 font-mono border-b-[2px] border-b-slate-200">
+    <div id="skills" className="relative top-20 text-blue-950 font-mono border-b-[2px] border-b-slate-200">
         <h1 className="text-4xl font-extrabold flex justify-center">SKILLS</h1>
         <div className="flex flex-wrap px-4 gap-x-12 pt-4 justify-center items-center w-full text-blue-950">
             {skillsData.map(skills => (

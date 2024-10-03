@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { Link } from "react-scroll";
 
 import { UseStateContext } from "../../context/context";
 
@@ -33,10 +34,31 @@ const Navbar = () =>  {
                 </div> 
                 : 
                 <ul className="relative bottom-1 flex justify-center space-x-10 pt-5 pr-20 font-serif font-bold nav-items pb-0">
-                    <li className="border-b-slate-950 ">HOME</li>
-                    <li>SKILLLS</li>
-                    <li>PROJECTS</li>
-                    <li>CONTACT</li>
+                    <li>
+                      <Link to="home" smooth={true} duration={500} >
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="skills" smooth={true} duration={500} >
+                        Skills
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="projects" smooth={true} duration={500} >
+                        Projects
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="certificates" smooth={true} duration={500} >
+                        Certificates
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="contacts" smooth={true} duration={500} >
+                        Contacts
+                      </Link>
+                    </li>
                 </ul>
             }
         </nav>

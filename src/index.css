@@ -30,7 +30,7 @@ li{
     /* animation-name: grow;
     animation-duration: 10s;
     animation-fill-mode: forwards; */
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(3, 3, 85);
 }
 
 .cards:hover{
