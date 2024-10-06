@@ -8,28 +8,28 @@ const SideBar = () => {
         <div className='fixed w-[50%] h-[80%] menu z-[5] bg-gray-100 text-blue-950 text-sm rounded-bl-md '>
             <div className='flex left-[10%] top-[15%] relative'>
                 <div className='flex flex-col text-left relative space-y-4 menu-item w-[30%] font-semibold'>
-                    <h1 onClick={() => closeMenu}>
-                        <Link to="home" smooth={true} duration={500} >
+                    <h1 >
+                        <Link to="home" smooth={true} duration={500} onClick={closeMenu} >
                             Home
                         </Link>
                     </h1>  
-                    <h1 onClick={() => closeMenu}>
-                        <Link to="skills" smooth={true} duration={500} >
+                    <h1>
+                        <Link to="skills" smooth={true} duration={500} onClick={closeMenu}>
                             Skills
                         </Link>
                     </h1>
-                    <h1 onClick={() => closeMenu}>
-                        <Link to="projects" smooth={true} duration={500} >
+                    <h1>
+                        <Link to="projects" smooth={true} duration={500} onClick={closeMenu}>
                             Projects
                         </Link>
                     </h1>
-                    <h1 onClick={() => closeMenu}>
-                        <Link to="certificates" smooth={true} duration={500} >
+                    <h1>
+                        <Link to="certificates" smooth={true} duration={500} onClick={closeMenu}>
                             Certificates
                         </Link>
                     </h1>
-                    <h1 onClick={() => closeMenu}>
-                        <Link to="contacts" smooth={true} duration={500} >
+                    <h1>
+                        <Link to="contacts" smooth={true} duration={500} onClick={closeMenu}>
                             Contacts
                         </Link>
                     </h1>
