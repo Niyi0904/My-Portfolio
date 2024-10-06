@@ -16,7 +16,7 @@ const HeroSection = () =>  {
             <p>I'm a detail-driven <span className="text-blue-300">Frontend Developer</span> with experience in building dynamic and scalable applications.</p>
             <p> Proficient in Javascript, and I specialize in ReactJs framework.</p>
             {/* <h1 className="text-4xl font-bold leading-10 self-stretch">Frontend Developer</h1> */}
-            <div className="relative top-3 text-slate-300 btn w-44 text-center h-[35%] cursor-pointer rounded-xl bg-blue-950 py-[2%] font-extrabold hover:bg-blue-900 text-lg">Get in touch</div>
+            <div className="relative top-3 text-white btn w-44 text-center h-[35%] cursor-pointer rounded-xl bg-blue-950 py-[2%] font-extrabold hover:bg-blue-900 text-lg">Get in touch</div>
         </div>
         <div className="relative flex w-[80%] xs:w-[90%] xs:bottom-7 sm:w-[90%] md:w-[90%] h-full xs:bg-red-900 herosection-img">
             <img src='https://i.ibb.co/BL73LNj/DALL-E-2024-09-18-00-45-26-A-person-with-black-hair-styled-in-a-chocolate-fashion-with-an-oblong-fac.webp

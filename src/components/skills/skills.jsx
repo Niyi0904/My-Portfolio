@@ -6,7 +6,7 @@ const Skills = () =>  {
         <h1 className="text-4xl font-extrabold flex justify-center">SKILLS</h1>
         <div className="flex flex-wrap px-4 gap-x-12 pt-4 justify-center items-center w-full text-blue-950">
             {skillsData.map(skills => (
-                <div key={skills.id} className="bg-gray-300 cards shadow-xl max-w-80 min-h-96 rounded-xl xs:mb-8 sm:mb-8">
+                <div key={skills.id} className="bg-gray-300 cards shadow-xl max-w-80 xs:max-w-90 sm:max-w-90 min-h-96 rounded-xl xs:mb-8 sm:mb-8">
                     <div className=" pt-4 px-4">
                         <img className="w-12" src={skills.icon} alt="Backend-Icon"/>
                         <h1 className="border-b-2 py-3 font-bold">{skills.title}</h1>

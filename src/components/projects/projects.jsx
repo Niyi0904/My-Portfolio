@@ -24,7 +24,7 @@ const Projects = () => (
             )) }  
 
         </div>
-        <div className="relative text-slate-300 project-btn w-40 text-center h-12 bottom-7 cursor-pointer rounded-3xl bg-blue-950 py-3 font-bold font- hover:bg-blue-900 text-md">View all</div>
+        <div className="relative text-white project-btn w-40 text-center h-12 bottom-7 cursor-pointer rounded-3xl bg-blue-950 py-3 font-bold font- hover:bg-blue-900 text-md">View all</div>
     </div>
 );
 

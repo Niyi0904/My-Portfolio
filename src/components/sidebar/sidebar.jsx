@@ -5,7 +5,7 @@ import { UseStateContext } from '../../context/context';
 const SideBar = () => {
     const {closeMenu} = UseStateContext();
     return (
-        <div className='fixed w-[50%] h-[80%] menu z-[5] bg-gray-100 text-blue-950 text-sm rounded-bl-md '>
+        <div className='fixed w-[70%] h-full menu z-[5] bg-gray-100 text-blue-950 text-sm rounded-bl-md '>
             <div className='flex left-[10%] top-[15%] relative'>
                 <div className='flex flex-col text-left relative space-y-4 menu-item w-[30%] font-semibold'>
                     <h1 >
