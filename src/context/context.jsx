@@ -9,7 +9,10 @@ export const ContextProvider = ({children}) => {
 
     const handleResize = () =>  setScreenSize(window.innerWidth);
 
-    const openMenu = () => setMenu(true);
+    const openMenu = () => {
+        setMenu(true);
+        console.log(menu)
+    }
     const closeMenu = () => setMenu(false)
 
  return (

@@ -30,7 +30,10 @@ const Navbar = () =>  {
             {
                 menubar ? <div className="flex relative right-[5%] top-3">
                   <p className="relative right-3 text-sm">Menu</p>
-                    <i className="fi fi-br-menu-burger menu-bar text-blue-950 text-xl xs:text-lg font-light" onClick={openMenu}></i>
+                    <i className="fi fi-br-menu-burger menu-bar text-blue-950 text-xl xs:text-lg font-light" onClick={() => {
+                      openMenu();
+                      console.log(menu);
+                    }}></i>
                 </div> 
                 : 
                 <ul className="relative bottom-1 flex justify-center space-x-10 pt-5 pr-20 font-serif font-bold nav-items pb-0">

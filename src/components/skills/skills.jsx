@@ -1,16 +1,43 @@
+import { useState } from "react";
 import React from "react";
 import { skillsData, languageData } from "./skillsData";
+import { click } from "@testing-library/user-event/dist/click";
 const Skills = () =>  {
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = (id) => {
+        const parent = document.getElementById('card-parent')
+        parent.childNodes.forEach(child => {
+            if (child.classList.contains('expand')) {
+                child.classList.remove('expand');
+            }
+        })
+        const element = document.getElementById(id)
+        const element2 = element.classList
+        if (element2.contains('expand')) {
+            element2.remove('expand');
+        } else {
+            element2.add('expand');
+        }
+    }
+
+    if (toggle) {
+        const event = document.addEventListener('click', events => {
+            const element = events.target
+            console.log(element);
+        }
+        )
+    }
   return (
     <div id="skills" className="relative top-20 text-blue-950 font-mono border-b-[2px] border-b-slate-200">
         <h1 className="text-4xl font-extrabold flex justify-center">SKILLS</h1>
-        <div className="flex flex-wrap px-4 gap-x-12 pt-4 justify-center items-center w-full text-blue-950">
+        <div id='card-parent' className="flex flex-wrap px-4 gap-x-12 pt-4 justify-center items-center w-full text-blue-950">
             {skillsData.map(skills => (
-                <div key={skills.id} className="bg-gray-300 cards shadow-xl max-w-80 xs:max-w-90 sm:max-w-90 min-h-96 rounded-xl xs:mb-8 sm:mb-8">
-                    <div className=" pt-4 px-4">
+                <div id={`divcard${skills.id}`} key={skills.id} className={`bg-gray-300 cards shadow-xl max-w-80 h-28 overflow-hidden xs:max-w-90 sm:max-w-90 rounded-xl xs:mb-8 sm:mb-8`} onClick={() => handleToggle(`divcard${skills.id}`) }>
+                    <div className="pt-4 px-4">
                         <img className="w-12" src={skills.icon} alt="Backend-Icon"/>
                         <h1 className="border-b-2 py-3 font-bold">{skills.title}</h1>
-                        <p className="description pt-4 text-sm leading-6">{skills.description}</p>
+                        <p className=" relative nic opacity-0 description pt-4 text-sm leading-3">{skills.description}</p>
                     </div>
                 </div>
             ))}
@@ -36,5 +63,7 @@ const Skills = () =>  {
 
 export default Skills;
 
-            
+{/* <div className="nic opacity-0 description pt-4 text-sm leading-3 bg-red-900">
+<p className="relative">{skills.description}</p>
+</div> */}
         
